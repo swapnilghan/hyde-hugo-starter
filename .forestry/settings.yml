@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: about-me.md
+  label: About Me
+  read_only: true
+- type: document
+  path: why-management.md
+  label: Why Management
+  read_only: true
 - type: directory
   path: content/posts
   label: Posts
@@ -14,16 +22,6 @@ sections:
   label: Pages
   create: all
   match: "*.md"
-- type: heading
-  label: Documentation
-- type: document
-  path: README.md
-  label: README
-  read_only: true
-- type: document
-  path: FIRSTSTEPS.md
-  label: First Steps
-  read_only: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
